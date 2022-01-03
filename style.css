@@ -509,6 +509,7 @@ section h2{
 }
 .about .col img{
     width: 100%;
+    transform: translateY(50px);
 }
 
 /*--- SUB-HEADER & ABOUT RESPONSIVE BREAKPOINTS ---*/
