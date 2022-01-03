@@ -467,3 +467,22 @@ section h2{
     }
 }
 /*--------------- FOOTER END ---------------*/
+
+
+
+
+/*==================== ABOUT PAGE ====================*/
+
+/*--------------- SUB-HEADER ---------------*/
+.sub-header{
+    padding: 0;
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    font-size: 40px;
+}
