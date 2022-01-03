@@ -471,7 +471,7 @@ section h2{
 
 
 
-/*==================== ABOUT PAGE ====================*/
+/*==================== ABOUT PAGE START ====================*/
 
 /*--------------- SUB-HEADER ---------------*/
 .sub-header{
@@ -486,3 +486,51 @@ section h2{
 .sub-header h1{
     font-size: 40px;
 }
+
+
+/*--------------- ABOUT ---------------*/
+.about .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+.about .col h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about .col p{
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+.red-btn{
+    background-color: #f44336;
+    margin-top: 30px;
+    color: #fff;
+}
+.about .col img{
+    width: 100%;
+}
+
+/*--- SUB-HEADER & ABOUT RESPONSIVE BREAKPOINTS ---*/
+@media (max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .about .col h3{
+        font-size: 20px;
+    }
+    .about .col p{
+        font-size: .7em;
+    }
+    .about .col p:nth-child(3){
+       display: none;
+    }
+    .red-btn{
+        margin-top: 10px;
+        padding: 7px 14px;
+    }
+}
+
+/*==================== ABOUT PAGE END ====================*/
