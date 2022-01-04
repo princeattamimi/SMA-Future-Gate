@@ -535,3 +535,61 @@ section h2{
 }
 
 /*==================== ABOUT PAGE END ====================*/
+
+
+
+/*==================== BLOG PAGE START ====================*/
+.blog .col img{
+    width: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,.3);
+}
+.blog .col h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.blog .col p{
+    font-size: .9em;
+}
+.blog .col .read-more{
+    position: absolute;
+    bottom: 5px;
+    right: 32%;
+    text-decoration: none;
+    color: lightskyblue;
+    background-color: #333;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.blog .row:nth-child(2){
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 50px;
+}
+.blog .row:nth-child(2).show{
+    height: auto;
+    transition: 3s;
+}
+.blog .row:nth-child(2).show .read-more{
+    bottom: 0;
+}
+
+/*--- BLOG RESPONSIVE BREAKPOINTS ---*/
+@media (max-width: 700px){
+    .blog .col h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .blog .col p{
+        font-size: .7em;
+    }
+    .blog .row:nth-child(2){
+        height: 300px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+}
+/*==================== BLOG PAGE END ====================*/

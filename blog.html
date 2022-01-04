@@ -39,14 +39,13 @@
             </div>
             <img src="images/burger.png" class="burger-menu">
         </nav>
-
+        <h1>Blog</h1>
     </section>
     <!---------------------------- HEADER END ---------------------------->
 
     
     <!---------------------------- BLOG START ---------------------------->
     <section class="blog">
-        <h2>blog</h2>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -62,7 +61,7 @@
                     <br>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quibusdam earum odit expedita explicabo eaque distinctio molestias cupiditate, obcaecati architecto impedit, ipsam neque hic exercitationem autem ea aut ullam numquam? Temporibus voluptates saepe sequi similique magnam obcaecati iusto? Esse incidunt tempora amet. Ipsa deleniti, corporis non et fugit repellat blanditiis iure obcaecati unde officiis voluptate voluptatibus repudiandae autem, incidunt deserunt minus enim facere maxime provident esse nihil iusto rem, magnam assumenda! Quae recusandae atque inventore dolorem eveniet facere deleniti omnis provident itaque quisquam culpa perspiciatis, ducimus, excepturi consequatur, iure officiis rerum nemo sunt sapiente in. Fugit omnis consequuntur explicabo porro eveniet enim sapiente sed, nemo voluptas nulla, sint, neque et illo in vero? Fugiat saepe, consequatur voluptate sed perferendis molestias, tenetur quam beatae, maxime blanditiis perspiciatis rerum! Distinctio hic voluptatum asperiores, quisquam vero natus reprehenderit inventore adipisci dicta fugiat mollitia. Voluptatem fugit delectus rerum et, accusantium aspernatur dolorum sapiente quibusdam.</p>
                     <br>
-                    <a href="#" class="hero-btn red-btn">Read More</a>
+                    <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
         </div>
@@ -87,5 +86,15 @@
 
     <!-- My Script -->
     <script src="script.js"></script>
+    <script>
+        const button = document.querySelector('.read-more');
+        const blog = document.querySelector('.row:nth-child(2)');
+
+        button.addEventListener('click', function(e){
+            blog.classList.toggle('show');
+
+            e.preventDefault();
+        })
+    </script>
 </body>
 </html>
