@@ -600,5 +600,44 @@ section h2{
 .row iframe{
     width: 100%;
 }
+.contact .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+}
+.row:nth-child(2) .col .info-contact{
+    display: flex;
+    margin-bottom: 30px;
+}
+.info-contact img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.contact .col input, .contact .col textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    /* background-color: #ddd; */
+}
+
+/* --- CONTACT RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 700px){
+    .info-contact img{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .info-contact span h4{
+        font-size: .8em;
+    }
+    .info-contact span p{
+        font-size: .8em;
+    }
+}
 
 /*==================== CONTACT PAGE END ====================*/
